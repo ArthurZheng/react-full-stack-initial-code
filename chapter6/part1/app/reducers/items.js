@@ -2,15 +2,15 @@
  * @file reducers for items
  */
 
-import { UPDATE_ENTRY_LIST } from '../actions';
+import { UPDATE_ENTRY_LIST } from '../actions'
 
-const initialState = [];
+const initialState = []
 
-export default function items(state = initialState, action) {
-  switch (action.type) {
-    case UPDATE_ENTRY_LIST:
-      return action.items;
-    default:
-      return state;
-  }
+export default function items (state = initialState, action) {
+	switch (action.type) {
+		case UPDATE_ENTRY_LIST:
+			return action.items
+		default:
+			return state
+	}
 }

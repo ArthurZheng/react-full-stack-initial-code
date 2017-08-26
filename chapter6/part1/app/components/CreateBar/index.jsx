@@ -2,22 +2,22 @@
  * @file component CreateBar
  */
 
-import './style.scss';
+import './style.scss'
 
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from 'react'
 
 const propTypes = {
-  onClick: PropTypes.func.isRequired,
-};
-
-function CreateBar({ onClick }) {
-  return (
-    <a href="#" onClick={onClick} className="list-group-item create-bar-component">
-      + 创建新的文章
-    </a>
-  );
+	onClick: PropTypes.func.isRequired,
 }
 
-CreateBar.propTypes = propTypes;
+function CreateBar ({onClick}) {
+	return (
+		<a href="#" onClick={onClick} className="list-group-item create-bar-component">
+			+ 创建新的文章
+		</a>
+	)
+}
 
-export default CreateBar;
+CreateBar.propTypes = propTypes
+
+export default CreateBar

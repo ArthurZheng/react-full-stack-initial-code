@@ -7,7 +7,7 @@ import items from './items';
 import editor from './editor';
 
 const rootReducer = combineReducers({
-  items,
+  items,     // ............store里面state对象的属性名，即为combineReducers之中传入对象的属性名(items).......
   editor,
 });
 
